@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation for Mario Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About Project</a></li>
+            <li><a href="">1-Planning</a></li>
+            <li><a href="">2-Coding Background and Tiles</a></li>
+            <li><a href="">3-Coding Sprites and Layers</a></li>
+            <li><a href="">4-Timing Accuracy</a></li>
+            <li><a href="">5-Input(Keyboard)</a></li>
+            <li><a href="">6-Tile Collision</a></li>
+            <li><a href="">7-Scrolling</a></li>
+            <li><a href="">8-Animation</a></li>
+            <li><a href="">9-Mario Mechanics</a></li>
+            <li><a href="">10-Background Patterns and Layering</a></li>
+            <li><a href="">11-Synchronous Entity Spawning</a></li>
+            <li><a href="">12-JSON Entity Spawning</a></li>
+            <li><a href="">13-Entity Interaction</a></li>
+            <li><a href="">14-Tech Debt & Presentation</a></li>
+            <li><a href="">15-Dashboard and Fonts</a></li>
+            <li><a href="">16-Audio Playback</a></li>
+            <li><a href="">17-Event Emitter</a></li>
+            <li><a href="">18-Bullet & Canon</a></li>
+            <li><a href="">19-Tile Modification</a></li>
+            <li><a href="">20-Music</a></li>
+            <li><a href="">21-Refactoring Events</a></li>
+            <li><a href="">22-Controlling Music</a></li>
+            <li><a href="">23-Coin Collection</a></li>
+            <li><a href="">24-Level Progression 1</a></li>
+            <li><a href="">24-Level Progression 2</a></li>
+            <li><a href="">25-Refactoring Traits</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+        <section id="about">
+            <h2>About the Mario Project</h2>
+            <p>This website is my own documentation on the work of Meth Meth Method. He built everything in JavaScript some five years before I made this page. Due to the complexity and difficulty of the project I found it necessary to record and analyze what he was doing and the thinking behind it for the sake of improving my own ability to code and understand what was being coded.</p>
+            <br>
+            <p>The order of navigation aligns with the order of episodes on his Youtube playlist for the project. Likewise the names are what he gave each episode. The starting point "Planning" is my understanding of how he decided what was important, based on the given steps involved in each episode.</p>
+            <br>
+            <p>At the time of writing, I had a year and a half of overall web experience across both design and development. After completing projects of varying complexity (<a href="https://gtwebdev.netlify.app/#portfolio">See in portfolio</a>), I wanted to also expand into game development. Toward that end I found the content produced by Meth Meth Method. It is my hope that by understanding what steps he takes, the process of game development will become very clear.</p>
+        </section>
+        <section id="planning">
+            <h2>Planning</h2>
+            <p>The start of the video playlist is episode 1(Background & Tiles). Unfortunately for us that doesn't really give us much of an introduction to the overall plan. What steps are needed? What are our starting points? What sort of things do we have to worry about? </p>
+            <p>The project from my perspective is quite immense. Basic questions that come to mind include things like:</p>
+            <ol>
+                <li>How do we start this?</li>
+                <li>Where are we getting assets from? Are we making them?</li>
+                <li>What are those assets even going to be?</li>
+                <li>What are the absolute minimum needs to make Mario?</li>
+                <li>What are nice to have pieces?</li>
+                <li>How will the assets interact with one another?</li>
+            </ol>
+            <br>
+            <p>Clearly this is problematic because a beginner would not know how to answer these questions and the video is seemingly oriented toward beginners or intermediate programmers who may not understand the issue without guidance.</p>
+            <h2>Therefore let's take some guesses at answering those questions</h2>
+            <p>Part of our problem solving will be forming and answering these questions ourselves since it is not provided for us.</p>
+            <h2>Our Questions, Our Possible Answers</h2>
+            <h3>How do we start this?</h3>
+            <p>It might sound like a silly question but in programming the starting point usually determines the speed and outcome of the project. All brainstorming involved will feed us the things we interact with and respond to, all the details will determine the answer to questions of "good enough".  Therefore, our starting point should appropriately be this.
+            </p>
+            <p>Well, what is Mario? The Mario Bros. games are largely from the "platformer" style of the 1980s and 1990s. What we're recreating is the first Super Mario Bros. game. In it we have the character Mario, he jumps and climbs, and eventually travels from the farthest left of the map to the farthest right. There are enemies that he can squish, but, who will hurt him (and send him off screen) if they touch him first.  Parts of the environment are interactive and can be destroyed or give bonuses.</p>
+            <h3>Where are we getting the assets from? Are we making them?</h3>
+            <p>Thankfully this is where Method helps us early: he shows us that Rabbi Dr. Google knows all and sees all and provides us with the assets we need. The file is also included in the original <a href="https://github.com/meth-meth-method/super-mario/tree/master/public/img">project git.</a></p>
+            <h3>What are the assets even going to be?</h3>
+            <p>The assets will include several things. Specific to our Mario game (and most of them), a background asset is placed behind a foreground asset that services as our terrain. We also will have assets for Mario and his friends and enemies. We will need images for items and tiles for terrain. Eventually music and sound effects will also be incorporated.<a href="#music">Music</a>,<a href="#music2">Controlling Music</a></p>
+            <h3>What are the absolute minimums needed to make Mario?</h3>
+            <p>In my opinion, the absolute minimum is a terrain challenge, movement controls, representations of characters, and an "end state" condition for each level.</p>
+            <h3>What are nice to have?</h3>
+            <p>Again, just my opinion, but music and more artistic art fall into this category. Part of me also feels a timer is not necessary except to keep the player moving on.</p>
+            <h3>How will the assets interact with one another?</h3>
+            <p>This is the great mystery that I endeavor to investigate and explain in detail.</p>
+        </section>
+        
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
